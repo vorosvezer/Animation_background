@@ -71,7 +71,7 @@ li a {
 
 .image-container {
     position: relative;  
-    background: url("/images/background.jpg");
+    background: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
