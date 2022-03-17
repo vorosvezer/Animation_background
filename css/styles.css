@@ -120,6 +120,16 @@ li a {
 
 .firstWord {
     color: aqua;
+    animation-name: flowing;  
+    animation-duration: 1.5s;
+    position: relative;
+
+}
+
+@keyframes flowing {
+    0%   {color:deeppink; left:-200px; top:0px;}
+    /* 50%  {color:yellow; left:100px; top:0px;} */
+    100% {color:deeppink; left: 0px; top:0px;}
 }
 
 .resume-cta {
