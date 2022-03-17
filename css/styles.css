@@ -9,13 +9,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --blue-text: #86ddff;
-    --dark-blue: #002b8f;
-    --mid-blue: #3ba0ff;
-    
-}
-
 html{
     font-family: 'Montserrat', sans-serif;
     
@@ -71,25 +64,14 @@ li a {
 
 .image-container {
     position: relative;  
-    
-    
-    background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
     margin:0;
-    animation: scale 8s;
-}
-
-@keyframes scale {
-    0% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-
+    animation-name: scale;
+    animation-duration: 8s;
+    background-image: url("images/background.jpg");
 }
 
 .overlay {
@@ -108,7 +90,7 @@ li a {
     align-items: left;
     flex-direction: column;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 10%;
     font-size: 1.563rem;
     color: white;
@@ -121,20 +103,17 @@ li a {
 .firstWord {
     color: aqua;
     animation-name: flowing;  
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     position: relative;
-
 }
 
-@keyframes flowing {
-    0%   {color:deeppink; left:-200px; top:0px;}
-    /* 50%  {color:yellow; left:100px; top:0px;} */
-    100% {color:deeppink; left: 0px; top:0px;}
+.btn {
+    padding-top: 13%;
 }
 
 .resume-cta {
     border: 0.125 solid;
-    color: aqua;
+    color: white;
     border-radius: 50rem;
     text-align: center;
     width: fit-content;
@@ -142,11 +121,41 @@ li a {
 }
 
 .resume-text {
-    color: aqua;
+   color: white;
+    font-weight: bold;
 }
 
-.resume-cta:hover,
-.resume-text:hover {
-    color: white;
+.button:hover {
+    background-color: deeppink;
+}
+
+/*  A N I M A T I O N S  */
+
+
+@keyframes scale {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 
 }
+
+@keyframes flowing {
+    0% {
+        color: deeppink;
+        font-style: italic;
+        left: -21.875rem;
+        top: 0px;
+    }
+
+    100% {
+        color: deeppink;
+        font-style: italic;
+        left: 0px;
+        top: 0px;
+    }
+}
+
