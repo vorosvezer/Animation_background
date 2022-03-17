@@ -71,6 +71,13 @@ li a {
     background-image: url("images/background.jpg");
 }
 
+.dina {
+    position: relative;
+    animation-name: flowing2;
+    animation-duration: 8s;
+    z-index: 3;
+}
+
 
 .overlay {
     position: absolute;
@@ -156,3 +163,19 @@ li a {
         top: 0px;
     }
 }
+
+
+@keyframes flowing2 {
+    0% {
+       
+        left: -21.875rem;
+        top: 0px;
+    }
+
+    100% {
+       
+        left: 50%;
+        top: 0px;
+    }
+}
+
