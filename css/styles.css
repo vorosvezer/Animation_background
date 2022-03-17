@@ -74,6 +74,8 @@ li a {
     background-image: url("images/background.jpg");
 }
 
+
+
 .overlay {
     position: absolute;
     height: 100%;
@@ -105,6 +107,13 @@ li a {
     animation-name: flowing;  
     animation-duration: 1s;
     position: relative;
+}
+
+.dina {
+    animation-name: flowing2;  
+    animation-duration: 4s;
+    position: relative;
+    z-index: 3;
 }
 
 .btn {
@@ -155,6 +164,20 @@ li a {
         color: deeppink;
         font-style: italic;
         left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes flowing2 {
+    0% {
+       
+        left: -21.875rem;
+        top: 0px;
+    }
+
+    100% {
+        
+        left: 50%;
         top: 0px;
     }
 }
