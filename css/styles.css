@@ -57,7 +57,7 @@ li a {
 
 #name {
     color: aqua;
-    font-size: 30px;
+    font-size: 1.875rem;;
     font-weight: bold;
 }
 
@@ -110,7 +110,7 @@ li a {
     position: absolute;
     top: 35%;
     left: 10%;
-    font-size: 25px;
+    font-size: 1.563rem;
     color: white;
     text-transform: uppercase;
     line-height: 2;
@@ -133,7 +133,7 @@ li a {
 }
 
 .resume-cta {
-    border: 2px solid;
+    border: 0.125 solid;
     color: aqua;
     border-radius: 50rem;
     text-align: center;
